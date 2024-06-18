@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grading System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script defer src="bootstrap.js"></script>
+
+   
+  </head>
+  <body>
+    <section class="text-center row shadow mx-auto mt-5">
+      <div class="rounded col-lg col-sm-12 border-warning border-3 p-5" id="parent">
+        <div id="child">
+          <header class="mb-2"><marquee behavior="" direction="right"><em>Welcome to the official    grading page@Akinlolu.dev</em></marquee></header>
+          <h2>Grading Systems</h2>
+          <div class="input-group mb-4">
+            <input id="score" type="number" placeholder="Enter your score" class="mb-3 ms-4 text-center border border-none">
+            <button class="text-center btn btn-success text-white" type="button" id="button" onclick="grade()">Check</button>
+          </div>
+        </div>
+          
+        <p id="result" class="text-center w-50 mx-auto" disabled placeholder="See Result Here" aria-label="Your Result" aria-describedby="button-addon2"></p>
+        <audio id="failMusic" src="c:/Users/user/Downloads/Davido-Assurance.mp3"></audio>
+      </div>
+    </section>
+
+    
+
+    <script>
+
+      function grade() {
+        var score = document.getElementById("score").value;
+        var resultElement = document.getElementById("result");
+        var musicElement;
+             
+        if ( score <=39 ) {
+        resultElement.textContent = "F-Fail😬"
+        musicElement = document.getElementById("failMusic").play("failMusic")
+        // console.log("failMusic")
+        }
+        else if ( score <=44 ) {
+        resultElement.textContent = "E-Pass😬"  
+        }
+        else if ( score <=49) {
+        resultElement.textContent = "D - Average😬"
+        }
+        else if ( score <=59) {
+        resultElement.textContent = "C-Credit😬"
+        }
+        else if ( score <=69) {
+        resultElement.textContent = "B-Excellent😬"
+        }
+        else if ( score <=100) {
+        resultElement.textContent = "A-Distinction😬"
+        }
+           
+      }
+    </script>
+
+  </body>
+</html>

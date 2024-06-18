@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+header {
+    font-family: 'Bree Serif', serif;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(#2196f3 , #e91e63);
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+h2 {
+    font-family: 'Bree Serif', serif;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#score {
+ /* border: solid; */
+ text-decoration: none;
+ width: 160px;
+}
+#result {
+    border: 0;
+    padding: 2px;
+    width: 200px;
+    height: 43px;
+    font-size: 20px;
+    align-items: center;
+    background-color: white;
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+
+}
+#result::placeholder{
+    font-family: 'Bree Serif', serif;
+    font-size: 15px;
+}
+#button {
+    height: 45px;
+    font-size: 18px;
+    border: 0;
+    width: 90px;
+    
+}
+input {
+    height: 45px;
+    font-size: 25px;
+    width: 100px;
+}
+#parent {
+    /* text-decoration: underline; */
+    width: 400px;
+    /* border: solid; */
+    
+}
+#child {
+    max-height: 700px;
+}
+
